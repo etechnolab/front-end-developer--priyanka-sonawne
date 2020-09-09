@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Student Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/yourcode.js"></script>
+<link rel="stylesheet" href="Student.css">
+
+
+
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+     <a class="navbar-brand " href="#" ><img src="img/study.png" alt=" " height=50px" class="display-1" >eTechno Lab</a>
+     <button class="navbar-toggler" type="button" dada-toggler="collapse" data-target="#navbarResponsive">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Our Team</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Our Client</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Gallary</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Career</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Download</a>
+    </li>
+    
+  </ul>
+</div>
+
+</nav>
+
+ <div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="img/johannes-plenio-FZpCcPss9to-unsplash.jpg" alt="New York" width="1700" height="550" >
+      <div class="carousel-caption text-center">
+        <h1 class="text-white font-weight-bold display-4 heading">Welcom To eTchno Lab</h1>
+        
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="Chicago" width="1700" height="550" >
+    </div>
+    <div class="carousel-item">
+      <img src="img/andrew-neel-cckf4TsHAuw-unsplash.jpg" alt="Los Angeles" width="1700" height="550" >
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- ...............................................................form........................................................ -->
+
+
+<section class="container abc">
+  <section class="row justify-content-center">
+    <section class="col-12 col-sm-3 col-md-3 p-10 ">
+  <form name="action="#" onsubmit="return validateForm()" method="post" class="formcontainer">
+    <h1 class="text-center">Registration form</h1>
+    <div class="form-group">
+      <label >Name:</label>
+      <input id="name" type="text" name="name" placeholder="Your answer" autocomplete="off"><br>
+      <span id="user" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+      <label >Email:</label>
+      <input id="email" type="Email" name="Email" placeholder="Your answer"  autocomplete="off"><br> 
+      <span id="emailid" class="text-danger"></span>
+    </div>
+      
+    <div class="form-group">
+        <label >Mobile Number:</label>
+       <input id="mobno" type="text" name="fname" placeholder="Your answer" autocomplete="off" ><br>
+       <span id="mobnoid" class="text-danger"></span>
+    </div>
+
+      <div class="form-group">
+        <label >Address:</label>
+       <input id="add" type="text" name="fname" placeholder="Your answer"  autocomplete="off"><br>
+       <span id="addid" class="text-danger"></span>
+     </div>
+
+      <div class="form-group">
+        <label >Gender:</label>
+      <input id="gender" type="radio" id="male" name="gender" value="male" autocomplete="off">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <span id="genderid" class="text-danger"></span>
+    </div>
+
+      <div class="form-group">
+        <label>Message:</label>
+       <input id="message" type="text" name="fname" placeholder="Your answer"  autocomplete="off"><br>
+       <span id="messageid" class="text-danger"></span>
+     </div> 
+     
+
+   <input type="submit" name="Submit" value="Submit" class="btn btn-primary btn-block btn-lg">  
+</form>
+
+</section>
+</section>
+</section>
+
+
+
+<!-- .......................................................... container....................................................
+ -->
+
+
+<div class="jumbotron">
+  <section id="team">
+    <div class=" container my-3 py-5 text-center">
+    <div class="row mb-5">
+    <div class="col-12">
+      <h1>Our Values</h1>
+      <p>eTechno Lab is a Software Services company, provides IT solutions to our clients with our core values Collaborative spirit, Integrity, and Serenity.</p>
+    </div>
+  </div>
+    
+      
+    
+
+  <div class="row">
+
+    <div class="col-lg-3 col-md-6">
+       <div class="card">
+          <div class="card-body text-center">
+                <i class="fas fa-hands"></i>
+                <h3>Collaborative Spirit</h3>   
+                <p>Talent wins game, but teamwork and intelligence win chamionship</p>         
+          </div>
+         
+       </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+       <div class="card">
+          <div class="card-body text-center">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Expert Thinking</h3>   
+                <p>Our expert and experienced team provide the ultimate solution for the client's query.</p>         
+          </div>
+         
+       </div>
+    </div>
+
+
+<div class="col-lg-3 col-md-6">
+       <div class="card">
+          <div class="card-body text-center">
+                <i class="fas fa-child"></i>
+                <h3>Integrity</h3>   
+                <p>To give real services to the client, we add something which cannot be bought or measured with money, and that is integrity.</p>         
+          </div>
+         
+       </div>
+    </div>
+
+
+    <div class="col-lg-3 col-md-6">
+       <div class="card">
+          <div class="card-body text-center">
+                <i class="fab fa-angellist"></i>
+                <h3>Client Serenity</h3>   
+                <p>We are doing everything with clarity. Because clarity brings Serenity.</p>         
+          </div>
+         
+       </div>
+    </div>
+
+
+  </div>
+
+</div>
+</section>
+</div>
+<!-- ...................................................footer..........................................................
+ -->
+
+
+<div class="footer bg-dark text-white">
+  <div class="main-content">
+    <div class="Left box ">
+      <h5 class=""> About us</h5>
+      <h6 class="text-danger">Mission</h6>
+      <p class="textsize">We engineer meaningful technology solutions <br>and Services tohelp businesses and societies flourish, <br>to workingtogether with clients to make their businesses stronger.</p>
+
+      <h6 class="text-danger">Vision</h6>
+      <p class="textsize">eTechno Lab takes an agile, collaborative approach<br> to creatingcustomized solutions across the digital value chainthrough <br>our solutions , services and people.</p>
+      </div>
+
+
+      <div class="center box text-center">
+       <div class="content">
+        <h5>eTech Lab</h5>
+         <a href="#">Home</a><br>
+         <a href="#">Company</a><br>
+         <a href="#">services</a><br>
+         <a href="#">Blog</a>
+       </div> 
+     </div>
+
+
+       <div class="right box text-center">
+        <div class="content">
+          <h5 >Contact with us</h5>
+          <a href="#"><i class="fab fa-facebook"></i></a><br>
+          <a href="#"><i class="fab fa-twitter-square"></i></a><br>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+         
+       </div>
+
+
+      </div>
+    
+  </div>
+
+<!-- ........................................................................javascript.................................................
+ -->
+
+ <script type="text/javascript">
+
+function validateForm(){  
+var name=document.getElementById('name').value;  
+var email=document.getElementById('email').value;  
+var add=document.getElementById('add').value;  
+var mobno=document.getElementById('mobno').value;  
+var gender=document.getElementById('gender').value;  
+var message=document.getElementById('message').value;  
+
+/*.....................................Name Validation..................................*/
+  
+if (name==""){  
+  document.getElementById('user').innerHTML="**please fill the name field";
+  return false;  
+}
+if(!isNaN(name)){  
+  document.getElementById('user').innerHTML="**only char";
+  return false;  
+  }  
+ 
+
+/*................................. Email Validation.....................................*/
+
+if (email==""){  
+  document.getElementById('emailid').innerHTML="**please fill the email field";
+  return false;  
+}
+
+if (email.indexOf('@')<=0){  
+  document.getElementById('emailid').innerHTML="**Invalid @ position";
+  return false;  
+}
+
+if ((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')){  
+  document.getElementById('emailid').innerHTML="**Invalid text after the . operator";
+  return false;  
+}
+
+/*................................. Mobole Number Validation.....................................*/
+
+if (mobno == ""){  
+  document.getElementById('mobnoid').innerHTML="**please fill the Mobile Number field";
+  return false;  
+}
+
+if(isNaN(mobno)){  
+  document.getElementById('mobnoid').innerHTML="**only 0 to 9 number";
+  return false;  
+  }  
+
+if(mobno.length != 10){  
+  document.getElementById('mobnoid').innerHTML="**enter Mobile number in 10 digit";
+  return false;  
+  }  
+
+
+
+
+
+/*................................. Address Validation.....................................*/
+
+if (add == ""){  
+  document.getElementById('addid').innerHTML="**please fill the address field";
+  return false;  
+}
+
+if (add.length < 2){  
+  document.getElementById('addid').innerHTML="**Adress is more than 2 character";
+  return false;  
+}
+
+
+
+/*................................. Gender Validation.....................................*/
+
+if (gender==""){  
+  document.getElementById('genderid').innerHTML="**please fill the Gender field";
+  return false;  
+}
+
+
+/*................................. Message Validation.....................................*/
+
+
+if (message == ""){  
+  document.getElementById('messageid').innerHTML="**please fill the message field";
+  return false;  
+}
+
+
+/*..........................................................................................*/
+
+}
+
+</script>
+
+
+</body>
+</html>

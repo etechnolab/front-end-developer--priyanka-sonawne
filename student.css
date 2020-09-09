@@ -1,0 +1,103 @@
+h1 {
+  color: red
+  margin-left: 20px;
+}
+
+body {
+  background-color: lightblue;
+}
+
+
+.navbar{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9rem
+	letter-spacing:.1rem;
+    background: rgba(0,0,0,0.6)!important
+}
+
+
+.navbar-nav li{
+	padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+	padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #ffffff;
+}
+
+.formcontainer{
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px #000;
+	width: 500px;
+}
+
+.abc{
+  margin: 50px;
+  padding-left: 50px;
+}
+
+
+.heading{
+	text-align: center;
+	height: 250px;
+}
+
+
+i {
+	font-size: 50px;
+}
+
+.footer {
+/*   position: fixed;
+*/   bottom: 0;
+   width: 100%;
+   
+}
+
+.main-content{
+	display: flex;
+}
+
+
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+
+
+.box .content{
+	margin: 20px 0 0 0;
+}
+
+.textsize{
+	font-size: 15px;
+}
+
+
+#team .card{
+	border-radius: 0;
+	box-shadow: 5px 5px 15px #e74c3c;
+	transition: all 0.3s ease-in;
+
+
+}
+
+
+#team .card:hover{
+	background: #e74c3c;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px #9E9E9E;
+}
+
+
+
+
